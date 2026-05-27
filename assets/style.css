@@ -58,7 +58,7 @@ body {
   padding: 120px 20px;
   background:
     linear-gradient(rgba(15,23,42,0.7), rgba(15,23,42,0.9)),
-    url('../photos/css.png') center/cover;
+    url('https://raw.githubusercontent.com/tehtawarkurangmanis/fatsa/refs/heads/main/photos/css.png?q=80&w=1600&auto=format&fit=crop') center/cover;
 }
 
 .hero h1 {
