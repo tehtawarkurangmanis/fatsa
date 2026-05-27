@@ -58,7 +58,7 @@ body {
   padding: 120px 20px;
   background:
     linear-gradient(rgba(15,23,42,0.7), rgba(15,23,42,0.9)),
-    url('https://raw.githubusercontent.com/tehtawarkurangmanis/enskrip/refs/heads/main/css.png?q=80&w=1600&auto=format&fit=crop') center/cover;
+    url(css.png) center/cover;
 }
 
 .hero h1 {
