@@ -58,7 +58,7 @@ body {
   padding: 120px 20px;
   background:
     linear-gradient(rgba(15,23,42,0.7), rgba(15,23,42,0.9)),
-    url(css.png) center/cover;
+    url('../photos/css.png') center/cover;
 }
 
 .hero h1 {
