@@ -93,26 +93,151 @@
   </section>
 
   <section class="section" id="about">
-    <div class="about">
-      <img src="photos/about.png" alt="About">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FATSA Galeri</title>
 
-      <div class="about-text">
-        <h2> bersambung..</h2>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        <p>
-          life is never flat
-        </p>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-        <a href="https://wa.me/628567645605" class="hero-btn">
-  Hubungi Saya
-</a>
-      </div>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar glass">
+    <div class="logo">FATSA Gallery</div>
+
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#gallery">Galeri</a>
+      <a href="#about">Tentang</a>
+      <a href="#contact">Kontak</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content reveal">
+
+      <h1 class="typing-text">Toni 💜 Melisa</h1>
+
+      <p class="reveal delay-1">
+        Segala sesuatu dalam hidup kami terjadi untuk kebaikan kami, hari demi hari hidup kami di penuhi keberkahan, kemudahan, dan kebahagiaan, kami menerima segala kebaikan dengan penuh rasa syukur.
+      </p>
+
+      <a href="#gallery" class="hero-btn reveal delay-2">Lihat Galeri</a>
     </div>
   </section>
 
-  <footer class="footer" id="contact">
-    <p>powered by ton-X Cryptoiz™ © 2026 </p>
+  <!-- GALLERY -->
+  <section class="section" id="gallery">
+
+    <h2 class="section-title reveal">Galeri Favorit</h2>
+    <p class="section-subtitle reveal delay-1">perjalanan berawal dari sini.</p>
+
+    <div class="gallery">
+
+      <div class="card reveal">
+        <img src="photos/001.jpg">
+        <div class="card-content">
+          <h3>16 Juni 2020</h3>
+          <p>moment pertama kali kami bertemu, hutan pinus Pemalang.</p>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <img src="photos/002.jpg">
+        <div class="card-content">
+          <h3>04 Juli 2020</h3>
+          <p>otw Indramayu</p>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <img src="photos/003.jpg">
+        <div class="card-content">
+          <h3>10 Oktober 2020</h3>
+          <p>tunangan.</p>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <img src="photos/004.jpg">
+        <div class="card-content">
+          <h3>08 Desember 2020</h3>
+          <p>pasipik.</p>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <img src="photos/005.jpg">
+        <div class="card-content">
+          <h3>10 Desember 2020</h3>
+          <p>prabalintang.</p>
+        </div>
+      </div>
+
+      <div class="card reveal">
+        <img src="photos/006.jpg">
+        <div class="card-content">
+          <h3>28 Juli 2021</h3>
+          <p>married.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+
+    <div class="about reveal">
+
+      <img src="photos/about.png">
+
+      <div class="about-text">
+        <h2 class="reveal">bersambung..</h2>
+        <p class="reveal delay-1">life is never flat</p>
+
+        <a href="https://wa.me/628567645605" class="btn reveal delay-2">
+          Hubungi Saya
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer reveal" id="contact">
+    <p>powered by ton-X Cryptoiz™ © 2026</p>
   </footer>
+
+  <!-- SCRIPT ANIMASI -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+          entry.target.classList.add("active");
+        } else {
+          entry.target.classList.remove("active");
+        }
+
+      });
+    }, {
+      threshold: 0.15
+    });
+
+    document.querySelectorAll(".reveal").forEach(el => {
+      observer.observe(el);
+    });
+  </script>
 
 </body>
 </html>
